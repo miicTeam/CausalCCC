@@ -1,0 +1,54 @@
+Package: causalCCC
+Title: Learning Causal intracellular causal pathways enabling cell-cell communication
+Version: 2.0.0
+Authors@R:
+    c(person(given = "Louise",
+             family = "Dupuis",
+             role = "aut",
+             email = "louise.dupuis@curie.fr"),
+    person(given = "Orianne",
+             family = "Debeaupuis",
+             role = "aut",
+             email = "orianne.debeaupuis@curie.fr"),
+    person(given = "Franck",
+             family = "Simon",
+             role = c("aut", "cre"),
+             email = "franck.simon@curie.fr"),
+      person(given = "Hervé",
+             family = "Isambert",
+             role = "aut",
+             email = "herve.isambert@curie.fr"))
+Description: This repository contains the source code for CausalCCC, a method based on MIIC 
+    (Multivariate Information based Inductive Causation) that learns a large class of causal or 
+    non-causal graphical models from purely observational data while including the effects of 
+    unobserved latent variables. Cell-Cell Communication (CCC) methods recover Ligand-Receptor 
+    interactions between single cell populations, but do not usually integrate intracellular causal 
+    pathways upstream and downstream of these L-R interactions. CausalCCC fills this gap by 
+    providing an integrative online server to reconstruct gene-gene interaction pathways across 
+    interacting cell types from single-cell transcriptomic data.
+    For more information, you can refer to:
+    Simon et al. eLife, reviewed preprint <doi:10.1101/2024.02.06.579177>, 
+    Cabeli et al. PLoS Comp. Bio. 2020 <doi:10.1371/journal.pcbi.1007866>,
+    Verny et al. PLoS Comp. Bio. 2017 <doi:10.1371/journal.pcbi.1005662>.
+License: GPL (>= 2)
+URL: https://github.com/miicTeam/CausalCCC
+BugReports: https://github.com/miicTeam/CausalCCC/issues
+Imports:
+    ppcor,
+    Rcpp,
+    scales,
+    stats,
+    miic,
+Suggests:
+    Seurat,
+    liana,
+    igraph,
+    grDevices,
+    ggplot2 (>= 3.3.0),
+    gridExtra
+LinkingTo:
+    Rcpp
+SystemRequirements: C++14
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.1
