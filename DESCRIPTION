@@ -39,6 +39,7 @@ Imports:
     Rcpp,
     scales,
     stats,
+    miic,
 Suggests:
     Seurat,
     liana,
