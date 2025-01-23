@@ -24,10 +24,12 @@ MIIC contains R and C++ sources.
 
 ## Installation
 
-From GitHub only (for now):
+You need both the MIIC R package version catering for CausalCCC and the CausalCCC package containing pre-processing automatic functions. From GitHub only (for now):
 ```R
 # install.packages("devtools")
-devtools::install_github("causal-omics/causalCCC/miic_R_package", force = T)
+devtools::install_github("miicTeam/miic_R_package@causalccc", force = T)
+devtools::install_github("miicTeam/CausalCCC", force = T)
+
 ```
 
 ## Quick start
